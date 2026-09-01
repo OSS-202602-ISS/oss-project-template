@@ -1,0 +1,21 @@
+# Secrets - never commit real values
+.env
+
+# Virtual environment
+.venv/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Tool output
+output/
+*.xlsx
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
