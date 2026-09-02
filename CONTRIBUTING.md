@@ -23,7 +23,7 @@ git pull                       # get your teammates' work
 
 ## Commit messages
 
-Start with one of five prefixes, then say what changed in plain English:
+Start with one of five prefixes, then say what changed in plain language:
 
 | Prefix | Use it for | Example |
 |---|---|---|
@@ -32,8 +32,6 @@ Start with one of five prefixes, then say what changed in plain English:
 | `docs:` | documentation only | `docs: fill in run instructions` |
 | `style:` | formatting, no behaviour change | `style: consistent quotes in main` |
 | `test:` | tests only | `test: cover empty record list` |
-
-Write them in English, like everything else on GitHub in this course.
 
 ## Pull requests
 
@@ -63,4 +61,4 @@ Say what you observed, then what you would like - not just a verdict.
 They are normal, not a disaster. Open the file, find the `<<<<<<<`, `=======`
 and `>>>>>>>` markers, keep the lines you want, delete the markers, then commit.
 If you are unsure, ask your pod before deleting anything - this is exactly the
-Week 6 skill.
+Chapter 6 skill.

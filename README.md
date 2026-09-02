@@ -84,7 +84,6 @@ CONTRIBUTING.md        how this team works: branches, commits, reviews
 
 ## 6. Ground rules (from the syllabus)
 
-- **Write everything in English** - commits, issues, pull requests, reviews, docs.
 - **No direct pushes to `main`.** Work on `feature/<name>-<task>`, open a pull
   request, get one teammate's review, then merge. See `CONTRIBUTING.md`.
 - **You must be able to explain every line you submit**, including lines an AI

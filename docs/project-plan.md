@@ -1,6 +1,6 @@
 # Project Plan
 
-Required deliverable, written in Week 12 and updated as things change.
+Required deliverable, written in Chapter 12 and updated as things change.
 Keep it to this one page.
 
 ## 1. The tool
@@ -39,7 +39,7 @@ Roles rotate; write down who has which role this week.
 
 ## 5. Schedule
 
-| Week | What we finish |
+| Chapter | What we finish |
 |---|---|
 | 12 | Repository set up, plan written, 3 issues opened, first feature branch |
 | 13 | Core feature works end to end (the two blanks are filled) |

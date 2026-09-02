@@ -1,6 +1,6 @@
 ## What this pull request does
 
-<!-- One or two sentences, in English. Link the issue: "Closes #12" -->
+<!-- One or two sentences. Link the issue: "Closes #12" -->
 
 Closes #
 
