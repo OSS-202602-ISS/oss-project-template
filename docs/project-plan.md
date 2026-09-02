@@ -1,6 +1,6 @@
 # Project Plan
 
-Required deliverable, written in Chapter 12 and updated as things change.
+Required deliverable, written in Chapter 11 and updated as things change.
 Keep it to this one page.
 
 ## 1. The tool
@@ -41,10 +41,10 @@ Roles rotate; write down who has which role this week.
 
 | Chapter | What we finish |
 |---|---|
-| 12 | Repository set up, plan written, 3 issues opened, first feature branch |
-| 13 | Core feature works end to end (the two blanks are filled) |
-| 14 | Peer review, error handling, documentation complete, tests pass |
-| 15 | Presentation, demo, final tag |
+| 11 | Repository set up, plan written, 3 issues opened, first feature branch |
+| 12 | Core feature works end to end (the two blanks are filled) |
+| 13 | Peer review, error handling, documentation complete, tests pass |
+| 14 | Presentation, demo, final tag |
 
 ## 6. Risks
 
