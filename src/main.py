@@ -42,9 +42,9 @@ def main(argv: list[str] | None = None) -> int:
     except NotImplementedError as error:
         logger.error("{}", error)
         print(
-            "\nThe scaffolding works - the blanks do not. Open src/process.py,\n"
-            "implement the TODO functions, then run `python -m pytest` and this\n"
-            "command again.",
+            "\nThe program runs, but the two blanks are not filled in yet. Open\n"
+            "src/process.py, write the TODO functions, then run `python -m pytest`\n"
+            "and this command again.",
             file=sys.stderr,
         )
         return 1

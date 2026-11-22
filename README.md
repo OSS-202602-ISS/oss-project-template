@@ -118,10 +118,9 @@ CONTRIBUTING.md        how this team works: branches, commits, reviews
 
 ## 7. Stuck?
 
-Follow the escalation ladder: ① ask AI → ② check the demo repository's answer
-branch and the FAQ → ③ ask your team → ④ ask the instructor. The recipe card for
-each library (install → example → the one common error) is the fastest fix for
-library-specific problems.
+Ask for help in this order: ① ask AI → ② read the recipe card for the library
+and the course FAQ → ③ ask your team → ④ ask the instructor. A recipe card shows
+the install command, a short example and the one common error for each library.
 
 ## 8. Submission checklist
 
