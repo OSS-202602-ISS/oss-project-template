@@ -2,7 +2,7 @@
 
 Required deliverable. List **every** library your tool depends on, with the
 license it is distributed under and what you use it for. The rows below cover
-what the skeleton itself imports - add, remove and edit as your project changes.
+what the template itself imports - add, remove and edit as your project changes.
 
 | Library | Version | License | What we use it for |
 |---|---|---|---|

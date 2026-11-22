@@ -40,6 +40,8 @@ Anything beyond that is track B, not the baseline.
 |---|---|---|
 | \<library\> | \<reason\> | yes / ask instructor |
 
+One row for each library. For example: `| pandas | reads servers.csv | yes |`
+
 Libraries not covered in class have a recipe card - read it before you add one.
 
 ## 4. Team and roles
@@ -68,4 +70,4 @@ this table.
 
 | What could go wrong | What we will do about it |
 |---|---|
-| \<e.g. our input file format is messier than expected\> | \<e.g. shrink to one column and validate it\> |
+| \<e.g. our input file has empty cells or extra columns\> | \<e.g. shrink to one column and validate it\> |

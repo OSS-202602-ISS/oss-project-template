@@ -7,7 +7,7 @@ labels: bug
 
 ## What happened
 
-<!-- Be specific: "Crashes on an empty CSV" beats "does not work" -->
+<!-- Be specific: "Crashes on an empty CSV" is better than "does not work" -->
 
 ## Steps to reproduce
 

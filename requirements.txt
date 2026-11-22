@@ -1,5 +1,5 @@
 # Course core stack - pinned versions (do not change without telling your team).
-# The skeleton itself imports: pandas, PyYAML, rich, loguru, python-dotenv, openpyxl.
+# The template itself imports: pandas, PyYAML, rich, loguru, python-dotenv, openpyxl.
 # requests is listed because most teams add an API step; remove it if yours does not.
 rich==15.0.0
 pandas==3.0.5

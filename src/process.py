@@ -44,7 +44,7 @@ def filter_records(records: list[dict], min_score: int) -> list[dict]:
     Hints:
         * A list comprehension is enough: [r for r in records if ...]
         * `tests/test_process.py` already checks this function - run
-          `python -m pytest` and make the red test go green.
+          `python -m pytest` and make the failing test pass.
     """
     raise NotImplementedError(
         "filter_records() is blank 1 of 2 - implement it in src/process.py"

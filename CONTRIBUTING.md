@@ -7,38 +7,45 @@ commands, `git switch` for branches, and one branch pattern.
 
 - **Never push directly to `main`.** `main` is protected. GitHub rejects a
   direct push to `main`.
-- One branch per task: `feature/<your-name>-<short-task>`
-  (for example `feature/ada-excel-output`)
+- One branch per task: `feature/<name>-<task>`. `<name>` is your first name in
+  small letters. `<task>` is two or three words from your issue title
+  (for example `feature/ada-excel-output`).
 - Make the branch from the newest `main`. Open a pull request when the task works.
 
 ### One task, step by step
 
-```bash
-git switch main                                  # go to main
-git pull                                         # get the newest main
-git switch -c feature/<your-name>-<short-task>   # make your branch and go to it
+```bat
+git switch main
+git pull --no-edit
+git switch -c feature/<name>-<task>
 git add <file>
 git commit -m "add: ..."
-git push -u origin feature/<your-name>-<short-task>   # the first push of this branch
+git push -u origin feature/<name>-<task>
 ```
+
+Line 1 goes to `main`. Line 2 gets the newest `main`. Line 3 makes your branch
+and goes to it. Lines 4 and 5 save your change. Line 6 is the first push of this
+branch.
 
 After the first push, `git push` is enough on this branch.
 
-Did you commit on `main` by mistake? Then the push is rejected. Git shows a
-line that starts with `remote: error:`. Type
-`git switch -c feature/<your-name>-<short-task>`. Your commit is now on this
-branch too. Push this branch with the last line above.
+Did you commit on `main` by mistake? Then the push is rejected. One line of
+the output has `Changes must be made through a pull request`, and one line has
+`! [remote rejected] main -> main`. Type `git switch -c feature/<name>-<task>`.
+Your commit is now on this branch too. Push this branch with the last line above.
 
 ## The six commands you need
 
-```bash
-git clone <repository url>     # once, at the start
-git status                     # what changed?
-git add <file>                 # stage what you want to commit
-git commit -m "add: ..."       # save it with a message
-git push                       # send it to GitHub
-git pull                       # get your teammates' work
-```
+| Command | What it does |
+|---|---|
+| `git clone <repository url>` | once, at the start |
+| `git status` | shows what changed |
+| `git add <file>` | picks the file for the next commit |
+| `git commit -m "add: ..."` | saves the change with a message |
+| `git push` | sends it to GitHub |
+| `git pull --no-edit` | gets your teammates' work |
+
+`--no-edit` stops Git from opening an editor.
 
 ## Commit messages
 
@@ -78,14 +85,15 @@ reviewer is a teammate, not the instructor. Reviewing is graded work too.
 
 ### How to write a review comment
 
-Say what you observed, then what you would like - not just a verdict.
+Say what you saw. Then say what you would like the author to change. Do not
+write only "OK" or "Good".
 
 > "`filter_records` crashes when the CSV has no rows - I got an IndexError.
 > Could you add a guard for the empty list, like `summarize` has?"
 
 ## Merge conflicts
 
-They are normal, not a disaster. Open the file, find the `<<<<<<<`, `=======`
+They happen often, and you can fix them. Open the file, find the `<<<<<<<`, `=======`
 and `>>>>>>>` markers, keep the lines you want, delete the markers, then commit.
 If you are unsure, ask your team before deleting anything - this is exactly the
 Chapter 6 skill.

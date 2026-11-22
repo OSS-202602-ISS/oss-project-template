@@ -3,7 +3,7 @@
 > One sentence: what does your tool do, and for whom?
 > Example: "Reads a server check list and reports which items need attention."
 
-**Team \<letter\>** · \<member names\> · Track: **A only** / **A + B** (keep one)
+**Team \<letter\>** · \<GitHub usernames\> · Track: **A only** / **A + B** (keep one)
 
 This repository was made for your team from the course template. Everything
 marked `TODO` or `<...>` is yours to replace.
@@ -12,7 +12,7 @@ marked `TODO` or `<...>` is yours to replace.
 
 ## 1. What this tool does
 
-Every project in this course has the same shape - **input → one processing step → output**:
+Every project in this course has the same three parts - **input → one processing step → output**:
 
 | Stage | In this template | In your project |
 |---|---|---|
@@ -54,8 +54,7 @@ The same run with every option:
 python -m src.main --input data/sample_input.csv --config config.yaml --excel output/results.xlsx
 ```
 
-This repository was made for your team from the course template. Right after
-you clone it, the run stops with a message. The message says that the blanks
+Right after you clone this repository, the run stops with a message. The message says that the blanks
 are not filled in yet. This is expected. See section 3.
 
 To use a secret (an API key, for example), copy `env.example` to a file named
@@ -72,11 +71,13 @@ Open [`src/process.py`](src/process.py). Two functions raise `NotImplementedErro
 The tests in [`tests/test_process.py`](tests/test_process.py) are the
 specification. Run them:
 
-```bash
-python -m pytest        # first run: 2 failed, 1 passed. Your goal: 3 passed.
+```bat
+python -m pytest
 ```
 
-Nothing else in the skeleton has to change for track A. When both functions are
+The first run shows `2 failed, 1 passed`. Your goal: `3 passed`.
+
+Nothing else in the template has to change for track A. When both functions are
 done, `python -m src.main` prints a table and the summary line.
 
 ## 4. Difficulty tracks
@@ -86,7 +87,7 @@ done, `python -m src.main` prints a table and the summary line.
   things to match your topic. This is a complete project.
 - **Track B (challenge, optional)** - Track A plus one extension of your own
   tool. For example: a second output format, one more whitelist library that the
-  skeleton does not use (`requests` for an API step), input validation with
+  template does not use (`requests` for an API step), input validation with
   clear error messages, or a second processing rule with its own tests.
 
 ## 5. Repository map
@@ -105,7 +106,7 @@ AI_USAGE.md            required if you used AI (you almost certainly did)
 CONTRIBUTING.md        how this team works: branches, commits, reviews
 ```
 
-## 6. Ground rules (from the syllabus)
+## 6. Team rules (from the syllabus)
 
 - **No direct pushes to `main`.** `main` is protected. GitHub rejects a direct
   push to `main`. Work on a branch `feature/<name>-<task>`. Open a pull request.
