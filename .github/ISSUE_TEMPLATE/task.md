@@ -21,4 +21,4 @@ labels: task
 ## Who / when
 
 Assignee:
-Target week:
+Target chapter:

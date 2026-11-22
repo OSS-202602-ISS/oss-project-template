@@ -1,6 +1,6 @@
 ## What this pull request does
 
-<!-- One or two sentences. Link the issue: "Closes #12" -->
+<!-- One or two sentences. Link the issue: "Closes #999" -->
 
 Closes #
 
@@ -25,4 +25,5 @@ python -m pytest
 
 ## Reviewer
 
-<!-- Tag the teammate reviewing this. One peer review is required before merge. -->
+<!-- Tag the teammate reviewing this. One approval is required before merge.
+     The approver is a teammate, not the author of this pull request. -->

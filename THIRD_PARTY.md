@@ -25,7 +25,7 @@ what the skeleton itself imports - add, remove and edit as your project changes.
 
 ## How to check a library's license in 30 seconds
 
-1. Open the library's GitHub repository.
-2. Look at the About box on the right - the license is shown there.
-3. Confirm it against the `LICENSE` file in the repository root.
-4. If the two disagree, treat that as a warning sign and pick another library.
+1. Find the repository from the library's PyPI page: Project links -> Source (it may not be on GitHub).
+2. If the About box on the right shows a license name, use it.
+3. If it says "Other", or the repository is not on GitHub, open the `LICENSE` file and use the license name from its first lines.
+4. If you cannot find any license at all, do not use the library - ask the instructor.

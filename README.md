@@ -3,10 +3,10 @@
 > One sentence: what does your tool do, and for whom?
 > Example: "Reads a server check list and reports which items need attention."
 
-**Team \<XX\>** · \<member names\> · Difficulty track: **A** / B (circle one)
+**Team \<letter\>** · \<member names\> · Track: **A only** / **A + B** (keep one)
 
-This repository started as the course template skeleton. Everything marked
-`TODO` or `<...>` is yours to replace.
+This repository was made for your team from the course template. Everything
+marked `TODO` or `<...>` is yours to replace.
 
 ---
 
@@ -22,19 +22,41 @@ Every project in this course has the same shape - **input → one processing ste
 
 ## 2. Run it
 
+**Windows (lab PC): use a cmd terminal.** PowerShell can block `activate` with a
+red error. In VS Code: **Terminal › New Terminal**. In the terminal panel, click
+the arrow next to **+** and choose **Command Prompt**. The prompt must not start
+with `PS`. Does it start with `PS`? Type `cmd` and press Enter.
+
+Type these in cmd:
+
+```bat
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
+python -m src.main
+```
+
+After `.venv\Scripts\activate`, the prompt starts with `(.venv)`. Activate
+`.venv` in every new terminal. A new terminal starts with `.venv` not active.
+
+**macOS / Linux:**
+
 ```bash
 python -m venv .venv
-.venv\Scripts\activate        # Windows
-source .venv/bin/activate      # macOS / Linux
-
+source .venv/bin/activate
 pip install -r requirements.txt
-
 python -m src.main
+```
+
+The same run with every option:
+
+```bash
 python -m src.main --input data/sample_input.csv --config config.yaml --excel output/results.xlsx
 ```
 
-Right after you fork this template, the run stops with a message telling you the
-blanks are not filled in yet. That is expected - see section 3.
+This repository was made for your team from the course template. Right after
+you clone it, the run stops with a message. The message says that the blanks
+are not filled in yet. This is expected. See section 3.
 
 To use a secret (an API key, for example), copy `env.example` to a file named
 `.env`, put the real value there, and read it with `python-dotenv`. `.env` is
@@ -51,7 +73,7 @@ The tests in [`tests/test_process.py`](tests/test_process.py) are the
 specification. Run them:
 
 ```bash
-python -m pytest        # 1 passed, 2 failed -> your job is a green run
+python -m pytest        # first run: 2 failed, 1 passed. Your goal: 3 passed.
 ```
 
 Nothing else in the skeleton has to change for track A. When both functions are
@@ -59,12 +81,13 @@ done, `python -m src.main` prints a table and the summary line.
 
 ## 4. Difficulty tracks
 
-- **Track A (default)** - fill the two blanks, swap in your own input file and
-  config, and rename things to match your topic. This is a complete project.
-- **Track B (extend)** - track A plus one real extension of your choosing, for
-  example: add a second output format, add a whitelist library the skeleton does
-  not use (`requests` for an API step), add input validation with clear error
-  messages, or add a second processing rule with its own tests.
+- **Track A (required for every team)** - a small tool built with whitelist
+  libraries. Fill the two blanks. Use your own input file and config. Rename
+  things to match your topic. This is a complete project.
+- **Track B (challenge, optional)** - Track A plus one extension of your own
+  tool. For example: a second output format, one more whitelist library that the
+  skeleton does not use (`requests` for an API step), input validation with
+  clear error messages, or a second processing rule with its own tests.
 
 ## 5. Repository map
 
@@ -84,8 +107,11 @@ CONTRIBUTING.md        how this team works: branches, commits, reviews
 
 ## 6. Ground rules (from the syllabus)
 
-- **No direct pushes to `main`.** Work on `feature/<name>-<task>`, open a pull
-  request, get one teammate's review, then merge. See `CONTRIBUTING.md`.
+- **No direct pushes to `main`.** `main` is protected. GitHub rejects a direct
+  push to `main`. Work on a branch `feature/<name>-<task>`. Open a pull request.
+  One teammate approves it. This teammate is not the author of the pull request.
+  (GitHub does not let you approve your own pull request.) Then the author
+  clicks **Merge pull request**. See `CONTRIBUTING.md`.
 - **You must be able to explain every line you submit**, including lines an AI
   wrote. Log AI use in `AI_USAGE.md`.
 - **No secrets, personal data, or internal school material** in this repository.
@@ -93,7 +119,7 @@ CONTRIBUTING.md        how this team works: branches, commits, reviews
 ## 7. Stuck?
 
 Follow the escalation ladder: ① ask AI → ② check the demo repository's answer
-branch and the FAQ → ③ ask your pod → ④ ask the instructor. The recipe card for
+branch and the FAQ → ③ ask your team → ④ ask the instructor. The recipe card for
 each library (install → example → the one common error) is the fastest fix for
 library-specific problems.
 

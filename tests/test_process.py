@@ -3,9 +3,9 @@
 Run every test:      python -m pytest
 Run one file:        python -m pytest tests/test_process.py -v
 
-Right after you fork this template, one test passes and two fail. That is on
-purpose: the failing tests are the specification for the two blanks in
-src/process.py. Your first milestone is a fully green run.
+Right after you clone your team repository, one test passes and two fail.
+This is on purpose: the failing tests are the specification for the two blanks
+in src/process.py. Your first goal: all 3 tests pass.
 """
 
 from src.process import filter_records, format_label, summarize
